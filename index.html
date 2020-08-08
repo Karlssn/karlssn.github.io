@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>New Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script> 
+</head>
+
+<body onload="date();clock();">
+    <div class="date">
+        <h1 id="clockText">
+
+        </h1>
+    </div>
+    <div class="date">
+        <h1 id="dateText">
+
+        </h1>
+    </div>
+    <div class="center">
+        <form>
+            
+            <div class="searchContainer">
+                <input type="text" placeholder="Search" class="search" onkeyup="keypress(this)" autofocus/>
+                <input type="hidden" id="auto"/>
+            </div>
+            <button type="button" class="go" onclick="searchWeb()">Go</button>
+            
+        </form>
+        <table>
+
+            <tr>
+                <th>
+                    Computer
+                </th>
+                <th>
+                    Social
+                </th>
+                <th>
+                     Spel
+                </th>
+                <th>
+                    Work
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <ul class="inner">
+                        <li>
+                            <a href="https://wiki.archlinux.org/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://codeforces.com/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.kattis.com/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="inner">
+                        <li>
+                            <a href="https://reddit.com/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://messenger.com/">
+                                <img src="terminal.png">
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+            <td>
+                <ul class="inner">
+                    <li>
+                        <a href="https://facebook.com/">
+                            <img src="terminal.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.kattis.com/">
+                            <img src="terminal.png">
+                        </a>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul class="inner">
+                    <li>
+                        <a href="https://open.kattis.com/">
+                            <img src="terminal.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://open.kattis.com/">
+                            <img src="terminal.png">
+                        </a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
