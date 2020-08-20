@@ -6,29 +6,41 @@
     <meta charset="utf-8">
     <title>New Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script> 
+    <script src="scripts.js"></script>
 </head>
 
-<body onload="date();clock();">
-    <div class="date">
-        <h1 id="clockText">
+<body onload="date();clock();weather()">
+    <ul>
+        <li class="clock">
+            <h1 id="clockText">
 
-        </h1>
-    </div>
-    <div class="date">
-        <h1 id="dateText">
+            </h1>
+        </li>
+        <li class="date">
+            <h1 id="dateText">
+            </h1>
+        </li>
+    </ul>
 
-        </h1>
-    </div>
+
     <div class="center">
         <form>
-            
             <div class="searchContainer">
-                <input type="text" placeholder="Search" class="search" onkeyup="keypress(this)" autofocus/>
-                <input type="hidden" id="auto"/>
+                <div id="left">
+                    <img id="weatherLogo" src="images/weather/clear.png">
+                    <p id="weather">21*C</p>
+
+                </div>
+                <div id="right">
+                    <button type="button" class="go" onclick="searchWeb()">DuckDuckGo</button>
+                    <button type="button" class="go" onclick="searchWeb()">Google</button>
+                </div>
+
+                <input type="text" placeholder="Search" class="search" onkeyup="keypress(this)" autofocus />
+                <input type="hidden" id="auto" />
             </div>
-            <button type="button" class="go" onclick="searchWeb()">Go</button>
-            
+
+
         </form>
         <table>
 
@@ -40,10 +52,10 @@
                     Social
                 </th>
                 <th>
-                    School
+                    Studies
                 </th>
                 <th>
-                    Work
+                    Other
                 </th>
             </tr>
 
@@ -53,21 +65,22 @@
                         <li>
                             <a href="https://wiki.archlinux.org/">
                                 <img src="images/arch.png">
+                                <span>Arch Wiki</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/">
-                                <img src="images/github.png">
+                                <img src="images/github.png"> Github
                             </a>
                         </li>
                         <li>
                             <a href="https://codeforces.com/">
-                                <img src="images/codeforces.png">
+                                <img src="images/codeforces.png"> Codeforces
                             </a>
                         </li>
                         <li>
                             <a href="https://open.kattis.com/">
-                                <img src="images/kattis.png">
+                                <img src="images/kattis.png"> Kattis
                             </a>
                         </li>
                     </ul>
@@ -76,66 +89,76 @@
                     <ul class="inner">
                         <li>
                             <a href="https://reddit.com/">
-                                <img src="images/reddit.png">
+                                <img src="images/reddit.png"> Reddit
                             </a>
                         </li>
                         <li>
                             <a href="https://youtube.com/">
-                                <img src="images/youtube.png">
+                                <img src="images/youtube.png"> Youtube
                             </a>
                         </li>
                         <li>
                             <a href="https://facebook.com/">
-                                <img src="images/facebook.png">
+                                <img src="images/facebook.png"> Facebook
                             </a>
                         </li>
                         <li>
                             <a href="https://messenger.com/">
-                                <img src="images/messenger.png">
+                                <img src="images/messenger.png"> Messenger
                             </a>
                         </li>
                     </ul>
                 </td>
-            <td>
-                <ul class="inner">
-                    <li>
-                        <a href="https://www.student.ladok.se/student/loggain#/aktuell">
-                            <img src="images/ladok.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://weblogin.kau.se/idp/profile/SAML2/Redirect/SSO;jsessionid=4c9ym3xymxw01wg28hvvqgztj?execution=e1s1">
-                            <img src="images/karlstad.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://idp.hh.se/idp/profile/SAML2/Redirect/SSO;jsessionid=elbuws6sl57jvpsnc6gy914p?execution=e1s1">
-                            <img src="images/halmstad.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://idp.hh.se/idp/profile/SAML2/Redirect/SSO;jsessionid=elbuws6sl57jvpsnc6gy914p?execution=e1s1">
-                            <img src="images/mälardalen.png">
-                        </a>
-                    </li>
-                </ul>
-            </td>
-            <td>
-                <ul class="inner">
-                    <li>
-                        <a href="https://outlook.live.com/owa/">
-                            <img src="images/outlook.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://keep.google.com/#home">
-                            <img src="images/keep.png">
-                        </a>
-                    </li>
-                </ul>
-            </td>
-        </tr>
-        </tr>
+                <td>
+                    <ul class="inner">
+                        <li>
+                            <a href="https://www.student.ladok.se/student/loggain#/aktuell">
+                                <img src="images/ladok.png"> Ladok
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://weblogin.kau.se/idp/profile/SAML2/Redirect/SSO;jsessionid=4c9ym3xymxw01wg28hvvqgztj?execution=e1s1">
+                                <img src="images/karlstad.png"> Karlstad Uni
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://idp.hh.se/idp/profile/SAML2/Redirect/SSO;jsessionid=elbuws6sl57jvpsnc6gy914p?execution=e1s1">
+                                <img src="images/halmstad.png"> Halmstad Uni
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://idp.hh.se/idp/profile/SAML2/Redirect/SSO;jsessionid=elbuws6sl57jvpsnc6gy914p?execution=e1s1">
+                                <img src="images/malardalen.png"> Mälardalen Uni
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="inner">
+                        <li>
+                            <a href="https://hckrnews.com">
+                                <img src="images/netflix.png"> Netflix
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://hckrnews.com">
+                                <img src="images/hckrnews.png"> HCKR NEWS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://outlook.live.com/owa/">
+                                <img src="images/outlook.png"> Outlook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://keep.google.com/#home">
+                                <img src="images/keep.png"> Keep
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            </tr>
         </table>
 
     </div>
