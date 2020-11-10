@@ -187,6 +187,6 @@ async function getQuote(endpoint) {
         return json.dataseries[0];
     } catch (err) {
         console.log(err);
-        alert("Failed to fetch Quote");
+        console.log("Failed to fetch Quote");
     }
 }
