@@ -8,7 +8,7 @@ As I wanted a more customisable start page I designed this page. To make this pa
     * <del>Create logos for main sites</del>
     * <del>Buttons around logos</del>
 * Features
-    * <del>Weather</del>
+    * Weather
     * Implement notes (possible Google Keep)
     * Switch to different search engines
     * Suggestions on search
