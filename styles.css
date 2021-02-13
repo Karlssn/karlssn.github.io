@@ -1,194 +1,208 @@
 body {
-    background-color: #242c33;
-    color: white;
-    font-size: 28px;
-    margin: 0;
+	background-color: #242c33;
+	color:#F0F1CE;
+	font-size: 28px;
+	margin: 0;
 }
 
 ul {
-    margin: 0 0 1em 0;
-    padding: 0;
-    width: 100%;
-    display: inline-block;
+	margin: 0 0 1em 0;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
 }
 
 .date {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .clock {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 1.5em;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1.5em;
 }
 
 #clockText {
-    font-size: 4em;
+	font-size: 4em;
 }
 
 #dateText {
-    font-size: 2em;
+	font-size: 2em;
 }
 
 #left {
-    text-align: left;
-    width: 45%;
-    display: inline-block;
+	text-align: left;
+	width: 45%;
+	display: inline-block;
 }
 
 #right {
-    text-align: right;
-    width: 45%;
-    display: inline-block;
+	text-align: right;
+	width: 45%;
+	display: inline-block;
 }
 
 #weather {
-    font-size: .5em;
-    display: inline-block;
+	font-size: .5em;
+	display: inline-block;
 }
 
 #weatherLogo {
-    width: 1em;
-    height: 1em;
+	width: 1em;
+	height: 1em;
 }
 
 h1 {
-    height: 1em;
-    padding: 0;
-    margin: 0;
+	height: 1em;
+	padding: 0;
+	margin: 0;
 }
 
 form {
-    text-align: center;
+	text-align: center;
 }
 
 .go {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #48545f;
-    border-radius: 17px;
-    border: 1px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    padding: .5em 1em;
-    margin-bottom: .2em;
-    text-decoration: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #48545f;
+	border-radius: 17px;
+	border: 1px;
+	display: inline-block;
+	cursor: pointer;
+	color: #F0F1CE;
+	padding: .5em 1em;
+	margin-bottom: .2em;
+	text-decoration: none;
 }
 
 .searchContainer {
-    border-radius: .5em;
-    background-color: #48545f;
-    display: inline-block;
-    margin-bottom: 1em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	border-radius: .5em;
+	background-color: #48545f;
+	display: inline-block;
+	margin-bottom: 1em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 input[type=text] {
-    display: block;
-    width: 50em;
-    margin: 0 auto;
-    padding-left: 1em;
-    height: 3em;
-    background-color: #576775;
-    border-radius: 0 0 1em 1em;
-    border: 0;
+	display: block;
+	width: 50em;
+	margin: 0 auto;
+	padding-left: 1em;
+	height: 3em;
+	background-color: #576775;
+	border-radius: 0 0 1em 1em;
+	color:#F0F1CE;
+	border: 0;
 }
 
 .center {
-    border-radius: 1rem;
+	border-radius: 1rem;
 }
 
 #auto {
-    position: absolute;
+	position: absolute;
 }
 
 table {
-    background-color: #242c33;
-    width: 80%;
-    margin: 0 auto;
+	background-color: #242c33;
+	width: 80%;
+	margin: 0 auto;
 }
 
 tbody {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 tr {
-    margin: 10 0 0 0;
+	margin: 10 0 0 0;
 }
 
 th {
-    width: 25%;
-    margin: 0 auto;
-    padding: 2em 2em 0em 2em;
-    text-align: left;
+	width: 25%;
+	margin: 0 auto;
+	padding: 2em 2em 0em 2em;
+	text-align: left;
 }
 
 td {
-    text-align: center;
-    margin: 0 auto;
+	vertical-align:top;
+	text-align: center;
+	margin: 0 auto;
 }
 
 ul.inner {
-    list-style: none;
-    padding: 0;
-    width: 100%;
+	list-style: none;
+	padding: 0;
+	width: 100%;
 }
 
 li {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 a:link,
 a:visited {
-    font-size: .8em;
-    width: 85%;
-    background-color: #36414b;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px;
-    padding: .5em;
-    margin: .3em;
-    border-radius: .4em;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: middle;
+	font-size: .8em;
+	width: 85%;
+	background-color: #36414b;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 1px;
+	padding: .5em;
+	margin: .3em;
+	border-radius: .4em;
+	color: #F0F1CE;
+	text-align: left;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 a:hover,
 a:active {
-    background-color: #8ba3b8;
+	background-color: #8ba3b8;
 }
 
 img {
-    vertical-align: middle;
-    width: 2.5em;
-    height: 2.5em;
+	vertical-align: middle;
+	width: 2.5em;
+	height: 2.5em;
+	/*https://codepen.io/sosuke/pen/Pjoqqp*/
+	filter: brightness(0) saturate(100%)invert(87%) sepia(14%) saturate(390%) hue-rotate(19deg) brightness(113%) contrast(89%); 
+}
+
+#goactive{
+	background-color: #242c33;
+	box-shadow: 0 0 0 0;
+}
+#goinactive{
+	      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20    px 0 rgba(0, 0, 0, 0.19);
+         background-color: #48545f;
 }
 
 @media screen and (max-width: 1100px) {
-    body {
-        font-size: 20px;
-    }
-    input[type=text] {
-        width: 20em;
-    }
+	body {
+		font-size: 20px;
+	}
+	input[type=text] {
+		width: 20em;
+	}
 }
 
 @media screen and (max-width: 700px) {
-    body {
-        font-size: 14px;
-    }
+	body {
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        font-size: 10px;
-    }
-    input[type=text] {
-        width: 20em;
-    }
+	body {
+		font-size: 10px;
+	}
+	input[type=text] {
+		width: 20em;
+	}
 }

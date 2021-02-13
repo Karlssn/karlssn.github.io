@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <title>New Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script ttype="text/javascript" src="data.js"></script>
+    <script ttype="text/javascript" src="scripts.js"></script>
 </head>
 
 <body onload="date();clock();weather()">
@@ -32,11 +33,11 @@
 
                 </div>
                 <div id="right">
-                    <button type="button" class="go" onclick="searchWeb()">DuckDuckGo</button>
-                    <button type="button" class="go" onclick="searchWeb()">Google</button>
+                    <button type="button" class="go" onclick="activateSearch('ddg')" id="goactive">DuckDuckGo</button>
+                    <button type="button" class="go" onclick="activateSearch('google')" id="goinactive">Google</button>
                 </div>
 
-                <input type="text" placeholder="Search" class="search" onkeyup="keypress(this)" autofocus />
+                <input type="text" placeholder="Search" class="search" onkeydown="keypress(this)" autofocus />
                 <input type="hidden" id="auto" />
             </div>
 
@@ -46,16 +47,13 @@
 
             <tr>
                 <th>
-                    Computer
+	    	    Dev
                 </th>
                 <th>
                     Social
                 </th>
                 <th>
-                    Studies
-                </th>
-                <th>
-                    Other
+                    General
                 </th>
             </tr>
 
@@ -97,6 +95,12 @@
                                 <img src="images/youtube.png"> Youtube
                             </a>
                         </li>
+    <li>
+                            <a href="https://www.linkedin.com/">
+                                <img src="images/facebook.png"> LinkedIn
+                            </a>
+                        </li>
+
                         <li>
                             <a href="https://facebook.com/">
                                 <img src="images/facebook.png"> Facebook
@@ -109,32 +113,7 @@
                         </li>
                     </ul>
                 </td>
-                <td>
-                    <ul class="inner">
-                        <li>
-                            <a href="https://www.student.ladok.se/student/loggain#/aktuell">
-                                <img src="images/ladok.png"> Ladok
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://kau.instructure.com/">
-                                <img src="images/karlstad.png"> Karlstad Uni
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://ltu.instructure.com/">
-                                <img src="images/lulea.png"> Luleå Uni
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.bth.se/canvas/">
-                                <img src="images/bth.png"> Blekinge Uni
-                            </a>
-                        </li>
-
-                    </ul>
-                </td>
-                <td>
+                                <td>
                     <ul class="inner">
                         <li>
                             <a href="https://netflix.com">
@@ -156,6 +135,12 @@
                                 <img src="images/keep.png"> Keep
                             </a>
                         </li>
+			<li>
+			     <a href="http://www.traveladventure.blog/">
+                                <img src="images/keep.png"> Blog
+                            </a>
+
+			</li>
                     </ul>
                 </td>
             </tr>
